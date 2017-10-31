@@ -12,24 +12,9 @@ public class Garis extends JPanel {
     private int xc,yc,r;
 
     //get dan set untuk titik pusat dan radiusnya
-    public int getxc() {
-        return xc;
-    }
-
-    public int getyc() {
-        return yc;
-    }
-
-    public int getR() {
-        return r;
-    }
-
-    public void setxc(int xa) {
-        xc = xa;
-    }
-
-    public void setyc(int ya) {
-        yc = ya;
+    public void setXcYc(int xc,int yc) {
+        this.xc = xc;
+        this.yc = yc;
     }
 
     
@@ -42,13 +27,11 @@ public class Garis extends JPanel {
         int x = 0; // P awal (0,r)
         int y = r;
 
-        while(x<=y) {
-            x++; //karena nilai x akan selalu tambah 1 terus menerus
+        for(x=1;x<=y;x++) {
             if (p<0) 
             {
                p += 2*x+1; //hitung p selanjutnya jika p < 0
             }
-           
             else
             {
                 y--; // nilai y akan - 1

@@ -21,10 +21,8 @@ public class mainLingkaran {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //Memanggil fungsi garis yang ada di class Garis
         Garis hasil = new Garis();
-        hasil.setxc(300); // nilai x
-        hasil.setyc(280); // nilai y
+        hasil.setXcYc(300, 400); // nilai x, y
         hasil.setR(150); // jari - jari
-        System.out.println(hasil);
         
         //Menampilkan Frame
         frame.add(hasil);
